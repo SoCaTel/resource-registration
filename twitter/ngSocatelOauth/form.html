@@ -1,0 +1,47 @@
+<div class="wrapper wrapper--w680">
+    <div class="card card-4">
+        <div class="card-body">
+            <h2 class="title">Twitter Authorization</h2>
+            <form>
+                <div class="input-group">
+                    <label class="label">Twitter Screen Name</label>
+                    <div class="input-group-icon">
+                        <input ng-model="osnData.TwitterAccountName" class="input--style-4"  name="account_name">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="label">Twitter Account Description</label>
+                    <div class="input-group-icon">
+                        <input ng-model="osnData.TwitterAccountDescription" class="input--style-4"  name="account_description">
+                    </div>
+                </div> 
+                <div ng-if="osnData.TwitterOAuthData != undefined">
+                    <div  class="input-group">
+                            <label class="label">User Id</label>
+                            <div class="input-group-icon">
+                                <input ng-model="osnData.TwitterOAuthData.user_id" class="input--style-4"  name="user_id">
+                            </div>
+                    </div>
+                    <div  class="input-group">
+                            <label class="label">OAuth Token</label>
+                            <div class="input-group-icon">
+                                <input ng-model="osnData.TwitterOAuthData.oauth_token" class="input--style-4"  name="oauth_token">
+                            </div>
+                    </div>  
+                    <div  class="input-group">
+                            <label class="label">OAuth Token Secret</label>
+                            <div class="input-group-icon">
+                                <input ng-model="osnData.TwitterOAuthData.oauth_token_secret" class="input--style-4"  name="oauth_token_secret">
+                            </div>
+                    </div>                                    
+                </div>                                 
+                <div class="p-t-15">
+                    <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                </div>
+                <div class="p-t-15">
+                        <button class="btn btn--radius-2 btn--blue" type="submit" ng-enabled="buttonEnabled" ng-click="submitFnc()">SignIn with Twitter</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

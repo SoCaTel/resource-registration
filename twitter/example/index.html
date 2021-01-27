@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SoCaTel OSN Registration">
+    <meta name="author" content="SoCaTel">
+
+    <!-- Title Page-->
+    <title>OSN Registration</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="../ngSocatelOauth/ngSocatelOAuth.css" rel="stylesheet" media="all">
+    
+<body ng-app="OSNRegistrationApp" ng-controller="MainController">
+    <div class="">
+       <twitter-form form-title="OSN Entry Form" osn-data="osnData" submit-func="submitFunc()"></twitter-form>
+    </div>
+</body>
+    <!-- JS -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>  
+    <script src="../bower_components/angular/angular.min.js"></script>             
+    <script src="../ngSocatelOAuth/ngSocatelOAuth.js"></script>
+    <!-- Main JS-->
+    <script src="main_app.js"></script> 
+</html>
